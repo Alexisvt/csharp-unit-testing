@@ -32,10 +32,8 @@ namespace MoqSamples
 
         public void Deposit(int amount)
         {
-            if (_log.Write($"Depositing {amount}"))
-            {
-                Balance += amount;
-            }
+            _log.Write($"Depositing {amount}");
+            Balance += amount;
         }
     }
 }
